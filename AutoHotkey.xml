@@ -1,520 +1,1365 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <NotepadPlus>
-<AutoComplete language="AutoHotkey">
-	<!-- By infogulch v0.1 -->
-	<!-- %installdir\plugins\APIs\Autohotkey.xml -->
-	<!-- http://www.autohotkey.com/community/viewtopic.php?f=2&t=53288 -->
-	<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal="" additionalWordChar="#@"/>
-	<KeyWord name="#AllowSameLineComments"/>
-	<KeyWord name="#ClipboardTimeout"/>
-	<KeyWord name="#CommentFlag"/>
-	<KeyWord name="#ErrorStdOut"/>
-	<KeyWord name="#EscapeChar"/>
-	<KeyWord name="#HotkeyInterval"/>
-	<KeyWord name="#HotkeyModifierTimeout"/>
-	<KeyWord name="#Hotstring"/>
-	<KeyWord name="#IfWinActive"/>
-	<KeyWord name="#IfWinExist"/>
-	<KeyWord name="#Include"/>
-	<KeyWord name="#InstallKeybdHook"/>
-	<KeyWord name="#InstallMouseHook"/>
-	<KeyWord name="#KeyHistory"/>
-	<KeyWord name="#MaxHotkeysPerInterval"/>
-	<KeyWord name="#MaxMem"/>
-	<KeyWord name="#MaxThreads"/>
-	<KeyWord name="#MaxThreadsBuffer"/>
-	<KeyWord name="#MaxThreadsPerHotkey"/>
-	<KeyWord name="#NoEnv"/>
-	<KeyWord name="#NoTrayIcon"/>
-	<KeyWord name="#Persistent"/>
-	<KeyWord name="#SingleInstance"/>
-	<KeyWord name="#UseHook"/>
-	<KeyWord name="#WinActivateForce"/>
-	<KeyWord name="Abs" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="ACos" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Asc" func="yes">
-		<Overload retVal="">
-			<Param name="String"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="ASin" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="ATan" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="AutoTrim"/>
-	<KeyWord name="BlockInput"/>
-	<KeyWord name="Break"/>
-	<KeyWord name="Ceil" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Chr" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Click"/>
-	<KeyWord name="ClipWait"/>
-	<KeyWord name="Continue"/>
-	<KeyWord name="Control"/>
-	<KeyWord name="ControlClick"/>
-	<KeyWord name="ControlFocus"/>
-	<KeyWord name="ControlGet"/>
-	<KeyWord name="ControlGetFocus"/>
-	<KeyWord name="ControlGetPos"/>
-	<KeyWord name="ControlGetText"/>
-	<KeyWord name="ControlMove"/>
-	<KeyWord name="ControlSend"/>
-	<KeyWord name="ControlSendRaw "/>
-	<KeyWord name="ControlSetText"/>
-	<KeyWord name="CoordMode"/>
-	<KeyWord name="Cos" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Critical"/>
-	<KeyWord name="DetectHiddenText"/>
-	<KeyWord name="DetectHiddenWindows"/>
-	<KeyWord name="DllCall" func="yes">
-		 <Overload retVal="">
-			<Param name="&quot;DllFile\Function&quot;"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="&quot;DllFile\Function&quot;"/>
-			<Param name="Type1"/>
-			<Param name="Arg1"/>
-			<Param name="Type2"/>
-			<Param name="Arg2"/>
-			<Param name="&quot;Cdecl ReturnType&quot;"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Drive"/>
-	<KeyWord name="DriveGet"/>
-	<KeyWord name="DriveSpaceFree"/>
-	<KeyWord name="Edit"/>
-	<KeyWord name="Else"/>
-	<KeyWord name="EnvAdd"/>
-	<KeyWord name="EnvDiv"/>
-	<KeyWord name="EnvGet"/>
-	<KeyWord name="EnvMult"/>
-	<KeyWord name="EnvSet"/>
-	<KeyWord name="EnvSub"/>
-	<KeyWord name="EnvUpdate"/>
-	<KeyWord name="Exit"/>
-	<KeyWord name="ExitApp"/>
-	<KeyWord name="Exp" func="yes">
-		<Overload retVal="">
-			<Param name="N"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="FileAppend"/>
-	<KeyWord name="FileCopy"/>
-	<KeyWord name="FileCopyDir"/>
-	<KeyWord name="FileCreateDir"/>
-	<KeyWord name="FileCreateShortcut"/>
-	<KeyWord name="FileDelete"/>
-	<KeyWord name="FileExist" func="yes">
-		<Overload retVal="">
-			<Param name="FilePattern"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="FileGetAttrib"/>
-	<KeyWord name="FileGetShortcut"/>
-	<KeyWord name="FileGetSize"/>
-	<KeyWord name="FileGetTime"/>
-	<KeyWord name="FileGetVersion"/>
-	<KeyWord name="FileInstall"/>
-	<KeyWord name="FileMove"/>
-	<KeyWord name="FileMoveDir"/>
-	<KeyWord name="FileRead"/>
-	<KeyWord name="FileReadLine"/>
-	<KeyWord name="FileRecycle"/>
-	<KeyWord name="FileRecycleEmpty"/>
-	<KeyWord name="FileRemoveDir"/>
-	<KeyWord name="FileSelectFile"/>
-	<KeyWord name="FileSelectFolder"/>
-	<KeyWord name="FileSetAttrib"/>
-	<KeyWord name="FileSetTime"/>
-	<KeyWord name="Floor" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="FormatTime"/>
-	<KeyWord name="GetKeyState"/>
-	<KeyWord name="GetKeyState" func="yes">
-		 <Overload retVal="">
-			<Param name="KeyName"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="KeyName"/>
-			<Param name="&quot;P&quot; or &quot;T&quot;"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Gosub"/>
-	<KeyWord name="Goto"/>
-	<KeyWord name="GroupActivate"/>
-	<KeyWord name="GroupAdd"/>
-	<KeyWord name="GroupClose"/>
-	<KeyWord name="GroupDeactivate"/>
-	<KeyWord name="GUI"/>
-	<KeyWord name="GuiControl"/>
-	<KeyWord name="GuiControlGet"/>
-	<KeyWord name="Hotkey"/>
-	<KeyWord name="if"/>
-	<KeyWord name="if " func="yes">
-		<Overload retVal="">
-			<Param name="expression"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="if var is not type"/>
-	<KeyWord name="if var not between"/>
-	<KeyWord name="if var not contains MatchList "/>
-	<KeyWord name="if var not in MatchList "/>
-	<KeyWord name="IfEqual/IfNotEqual"/>
-	<KeyWord name="IfExist"/>
-	<KeyWord name="IfGreater"/>
-	<KeyWord name="IfGreaterOrEqual"/>
-	<KeyWord name="IfInString"/>
-	<KeyWord name="IfLess"/>
-	<KeyWord name="IfLessOrEqual"/>
-	<KeyWord name="IfMsgBox"/>
-	<KeyWord name="IfWinActive"/>
-	<KeyWord name="IfWinExist"/>
-	<KeyWord name="IfWinNotActive"/>
-	<KeyWord name="IfWinNotExist"/>
-	<KeyWord name="ImageSearch"/>
-	<KeyWord name="IniDelete"/>
-	<KeyWord name="IniRead"/>
-	<KeyWord name="IniWrite"/>
-	<KeyWord name="Input"/>
-	<KeyWord name="InputBox"/>
-	<KeyWord name="InStr" func="yes">
-		 <Overload retVal="">
-			<Param name="Haystack"/>
-			<Param name="Needle"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="Haystack"/>
-			<Param name="Needle"/>
-			<Param name="CaseSensitive = false"/>
-			<Param name="StartingPos = 1"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="IsFunc" func="yes">
-		<Overload retVal="">
-			<Param name="FunctionName"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="IsLabel" func="yes">
-		<Overload retVal="">
-			<Param name="LabelName"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="KeyHistory"/>
-	<KeyWord name="KeyWait"/>
-	<KeyWord name="LeftClick"/>
-	<KeyWord name="LeftClickDrag"/>
-	<KeyWord name="ListHotkeys"/>
-	<KeyWord name="ListLines"/>
-	<KeyWord name="ListVars"/>
-	<KeyWord name="Ln" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Log" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Loop " func="yes">
-		<Overload retVal="">
-			<Param name="files &amp; folders"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Loop " func="yes">
-		<Overload retVal="">
-			<Param name="normal"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Loop " func="yes">
-		<Overload retVal="">
-			<Param name="parse a string"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Loop " func="yes">
-		<Overload retVal="">
-			<Param name="read file contents"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Loop " func="yes">
-		<Overload retVal="">
-			<Param name="registry"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Menu"/>
-	<KeyWord name="Mod" func="yes">
-		<Overload retVal="">
-			<Param name="Dividend"/>
-			<Param name="Divisor"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="MouseClick"/>
-	<KeyWord name="MouseClickDrag"/>
-	<KeyWord name="MouseGetPos"/>
-	<KeyWord name="MouseMove"/>
-	<KeyWord name="MsgBox"/>
-	<KeyWord name="NumGet" func="yes">
-		 <Overload retVal="">
-			<Param name="VarOrAddress"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="VarOrAddress"/>
-			<Param name="Offset = 0"/>
-			<Param name="Type = &quot;UInt&quot;"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="NumPut" func="yes">
-		 <Overload retVal="">
-			<Param name="Number"/>
-			<Param name="VarOrAddress"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="Number"/>
-			<Param name="VarOrAddress"/>
-			<Param name="Offset = 0"/>
-			<Param name="Type = &quot;UInt&quot;"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="OnExit"/>
-	<KeyWord name="OnMessage" func="yes">
-		 <Overload retVal="">
-			<Param name="MsgNumber"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="MsgNumber"/>
-			<Param name="&quot;FunctionName&quot;"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="OutputDebug"/>
-	<KeyWord name="Pause"/>
-	<KeyWord name="PixelGetColor"/>
-	<KeyWord name="PixelSearch"/>
-	<KeyWord name="PostMessage"/>
-	<KeyWord name="Process"/>
-	<KeyWord name="Progress"/>
-	<KeyWord name="Random"/>
-	<KeyWord name="RegDelete"/>
-	<KeyWord name="RegExMatch" func="yes">
-		 <Overload retVal="">
-			<Param name="Haystack"/>
-			<Param name="NeedleRegEx"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="Haystack"/>
-			<Param name="NeedleRegEx"/>
-			<Param name="UnquotedOutputVar = &quot;&quot;"/>
-			<Param name="StartingPos = 1"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="RegExReplace" func="yes">
-		 <Overload retVal="">
-			<Param name="Haystack"/>
-			<Param name="NeedleRegEx"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="Haystack"/>
-			<Param name="NeedleRegEx"/>
-			<Param name="Replacement = &quot;&quot;"/>
-			<Param name="OutputVarCount = &quot;&quot;"/>
-			<Param name="Limit = -1"/>
-			<Param name="StartingPos = 1"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="RegisterCallback" func="yes">
-		 <Overload retVal="">
-			<Param name="&quot;FunctionName&quot;"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="&quot;FunctionName&quot;"/>
-			<Param name="Options = &quot;&quot;"/>
-			<Param name="ParamCount = FormalCount"/>
-			<Param name="EventInfo = Address"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="RegRead"/>
-	<KeyWord name="RegWrite"/>
-	<KeyWord name="Reload"/>
-	<KeyWord name="Return"/>
-	<KeyWord name="RightClick"/>
-	<KeyWord name="RightClickDrag"/>
-	<KeyWord name="Round" func="yes">
-		 <Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="Number"/>
-			<Param name="N"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Run"/>
-	<KeyWord name="RunAs"/>
-	<KeyWord name="RunWait"/>
-	<KeyWord name="Send"/>
-	<KeyWord name="SendInput"/>
-	<KeyWord name="SendMessage"/>
-	<KeyWord name="SendMode"/>
-	<KeyWord name="SendPlay"/>
-	<KeyWord name="SendRaw"/>
-	<KeyWord name="SetBatchLines"/>
-	<KeyWord name="SetCapslockState"/>
-	<KeyWord name="SetControlDelay"/>
-	<KeyWord name="SetDefaultMouseSpeed"/>
-	<KeyWord name="SetEnv"/>
-	<KeyWord name="SetFormat"/>
-	<KeyWord name="SetKeyDelay"/>
-	<KeyWord name="SetMouseDelay"/>
-	<KeyWord name="SetNumlockState"/>
-	<KeyWord name="SetScrollLockState"/>
-	<KeyWord name="SetStoreCapslockMode"/>
-	<KeyWord name="SetTimer"/>
-	<KeyWord name="SetTitleMatchMode"/>
-	<KeyWord name="SetWinDelay"/>
-	<KeyWord name="SetWorkingDir"/>
-	<KeyWord name="Shutdown"/>
-	<KeyWord name="Sin" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Sleep"/>
-	<KeyWord name="Sort"/>
-	<KeyWord name="SoundBeep"/>
-	<KeyWord name="SoundGet"/>
-	<KeyWord name="SoundGetWaveVolume"/>
-	<KeyWord name="SoundPlay"/>
-	<KeyWord name="SoundSet"/>
-	<KeyWord name="SoundSetWaveVolume"/>
-	<KeyWord name="SplashImage"/>
-	<KeyWord name="SplashTextOff"/>
-	<KeyWord name="SplashTextOn"/>
-	<KeyWord name="SplitPath"/>
-	<KeyWord name="Sqrt" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="StatusBarGetText"/>
-	<KeyWord name="StatusBarWait"/>
-	<KeyWord name="StringCaseSense"/>
-	<KeyWord name="StringGetPos"/>
-	<KeyWord name="StringLeft"/>
-	<KeyWord name="StringLen"/>
-	<KeyWord name="StringLower"/>
-	<KeyWord name="StringMid"/>
-	<KeyWord name="StringReplace"/>
-	<KeyWord name="StringRight"/>
-	<KeyWord name="StringSplit"/>
-	<KeyWord name="StringTrimLeft"/>
-	<KeyWord name="StringTrimRight"/>
-	<KeyWord name="StringUpper"/>
-	<KeyWord name="StrLen" func="yes">
-		<Overload retVal="">
-			<Param name="String"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="SubStr" func="yes">
-		 <Overload retVal="">
-			<Param name="String"/>
-			<Param name="StartingPos"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="String"/>
-			<Param name="StartingPos"/>
-			<Param name="Length"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Suspend"/>
-	<KeyWord name="SysGet"/>
-	<KeyWord name="Tan" func="yes">
-		<Overload retVal="">
-			<Param name="Number"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="Thread"/>
-	<KeyWord name="ToolTip"/>
-	<KeyWord name="Transform"/>
-	<KeyWord name="TrayTip"/>
-	<KeyWord name="UrlDownloadToFile"/>
-	<KeyWord name="VarSetCapacity" func="yes">
-		 <Overload retVal="">
-			<Param name="UnquotedVarName"/>
-		</Overload>
-		<Overload retVal="">
-			<Param name="UnquotedVarName"/>
-			<Param name="RequestedCapacity"/>
-			<Param name="FillByte"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="While-loop"/>
-	<KeyWord name="WinActivate"/>
-	<KeyWord name="WinActivateBottom"/>
-	<KeyWord name="WinActive" func="yes">
-		<Overload retVal="">
-			<Param name="WinTitle"/>
-			<Param name="WinText"/>
-			<Param name="ExcludeTitle"/>
-			<Param name="ExcludeText"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="WinClose"/>
-	<KeyWord name="WinExist" func="yes">
-		<Overload retVal="">
-			<Param name="WinTitle"/>
-			<Param name="WinText"/>
-			<Param name="ExcludeTitle"/>
-			<Param name="ExcludeText"/>
-		</Overload>
-	</KeyWord>
-	<KeyWord name="WinGet"/>
-	<KeyWord name="WinGetActiveStats"/>
-	<KeyWord name="WinGetActiveTitle"/>
-	<KeyWord name="WinGetClass"/>
-	<KeyWord name="WinGetPos"/>
-	<KeyWord name="WinGetText"/>
-	<KeyWord name="WinGetTitle"/>
-	<KeyWord name="WinHide"/>
-	<KeyWord name="WinKill"/>
-	<KeyWord name="WinMaximize"/>
-	<KeyWord name="WinMenuSelectItem"/>
-	<KeyWord name="WinMinimize"/>
-	<KeyWord name="WinMinimizeAll"/>
-	<KeyWord name="WinMinimizeAllUndo"/>
-	<KeyWord name="WinMove"/>
-	<KeyWord name="WinRestore"/>
-	<KeyWord name="WinSet"/>
-	<KeyWord name="WinSetTitle"/>
-	<KeyWord name="WinShow"/>
-	<KeyWord name="WinWait"/>
-	<KeyWord name="WinWaitActive"/>
-	<KeyWord name="WinWaitClose"/>
-	<KeyWord name="WinWaitNotActive"/>
-</AutoComplete>
+    <AutoComplete language="AutoHotkey">
+        <!-- Based on infogulch's Autocomplete v0.1 -->
+        <!-- %installdir%\plugins\APIs\Autohotkey.xml -->
+        <Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal="" additionalWordChar="#_{@"/>
+        <KeyWord name="#AllowSameLineComments"/>
+        <KeyWord name="#ClipboardTimeout"/>
+        <KeyWord name="#CommentFlag"/>
+        <KeyWord name="#ErrorStdOut"/>
+        <KeyWord name="#EscapeChar"/>
+        <KeyWord name="#HotkeyInterval"/>
+        <KeyWord name="#HotkeyModifierTimeout"/>
+        <KeyWord name="#Hotstring"/>
+        <KeyWord name="#IfWinActive"/>
+        <KeyWord name="#IfWinExist"/>
+        <KeyWord name="#Include"/>
+        <KeyWord name="#IncludeAgain"/>
+        <KeyWord name="#InstallKeybdHook"/>
+        <KeyWord name="#InstallMouseHook"/>
+        <KeyWord name="#KeyHistory"/>
+        <KeyWord name="#MaxHotkeysPerInterval"/>
+        <KeyWord name="#MaxMem"/>
+        <KeyWord name="#MaxThreads"/>
+        <KeyWord name="#MaxThreadsBuffer"/>
+        <KeyWord name="#MaxThreadsPerHotkey"/>
+        <KeyWord name="#NoEnv"/>
+        <KeyWord name="#NoTrayIcon"/>
+        <KeyWord name="#Persistent"/>
+        <KeyWord name="#SingleInstance"/>
+        <KeyWord name="#UseHook"/>
+        <KeyWord name="#WinActivateForce"/>
+        <KeyWord name="%"/>
+        <KeyWord name="__Call"/>
+        <KeyWord name="__Delete"/>
+        <KeyWord name="__Get"/>
+        <KeyWord name="__New"/>
+        <KeyWord name="__Set"/>
+        <KeyWord name="_AddRef"/>
+        <KeyWord name="_Clone"/>
+        <KeyWord name="_GetAddress"/>
+        <KeyWord name="_GetCapacity"/>
+        <KeyWord name="_HasKey"/>
+        <KeyWord name="_Insert"/>
+        <KeyWord name="_MaxIndex"/>
+        <KeyWord name="_MinIndex"/>
+        <KeyWord name="_NewEnum"/>
+        <KeyWord name="_Release"/>
+        <KeyWord name="_Remove"/>
+        <KeyWord name="_SetCapacity"/>
+        <KeyWord name="{#}"/>
+        <KeyWord name="{$}"/>
+        <KeyWord name="{^}"/>
+        <KeyWord name="{~}"/>
+        <KeyWord name="{+}"/>
+        <KeyWord name="{Alt}"/>
+        <KeyWord name="{AltDown}"/>
+        <KeyWord name="{AltUp}"/>
+        <KeyWord name="{AppsKey}"/>
+        <KeyWord name="{BackSpace}"/>
+        <KeyWord name="{Browser_Back}"/>
+        <KeyWord name="{Browser_Favorites}"/>
+        <KeyWord name="{Browser_Forward}"/>
+        <KeyWord name="{Browser_Home}"/>
+        <KeyWord name="{Browser_Refresh}"/>
+        <KeyWord name="{Browser_Search}"/>
+        <KeyWord name="{Browser_Stop}"/>
+        <KeyWord name="{BS}"/>
+        <KeyWord name="{CapsLock}"/>
+        <KeyWord name="{Control}"/>
+        <KeyWord name="{Ctrl}"/>
+        <KeyWord name="{CtrlBreak}"/>
+        <KeyWord name="{CtrlDown}"/>
+        <KeyWord name="{CtrlUp}"/>
+        <KeyWord name="{Del}"/>
+        <KeyWord name="{Delete}"/>
+        <KeyWord name="{Down}"/>
+        <KeyWord name="{End}"/>
+        <KeyWord name="{Enter}"/>
+        <KeyWord name="{Esc}"/>
+        <KeyWord name="{Escape}"/>
+        <KeyWord name="{F1}"/>
+        <KeyWord name="{F2}"/>
+        <KeyWord name="{F3}"/>
+        <KeyWord name="{F4}"/>
+        <KeyWord name="{F5}"/>
+        <KeyWord name="{F6}"/>
+        <KeyWord name="{F7}"/>
+        <KeyWord name="{F8}"/>
+        <KeyWord name="{F9}"/>
+        <KeyWord name="{F10}"/>
+        <KeyWord name="{F11}"/>
+        <KeyWord name="{F12}"/>
+        <KeyWord name="{F13}"/>
+        <KeyWord name="{F14}"/>
+        <KeyWord name="{F15}"/>
+        <KeyWord name="{F16}"/>
+        <KeyWord name="{F17}"/>
+        <KeyWord name="{F18}"/>
+        <KeyWord name="{F19}"/>
+        <KeyWord name="{F20}"/>
+        <KeyWord name="{F21}"/>
+        <KeyWord name="{F22}"/>
+        <KeyWord name="{F23}"/>
+        <KeyWord name="{F24}"/>
+        <KeyWord name="{Home}"/>
+        <KeyWord name="{Ins}"/>
+        <KeyWord name="{Insert}"/>
+        <KeyWord name="{Joy1}"/>
+        <KeyWord name="{Joy2}"/>
+        <KeyWord name="{Joy3}"/>
+        <KeyWord name="{Joy4}"/>
+        <KeyWord name="{Joy5}"/>
+        <KeyWord name="{Joy6}"/>
+        <KeyWord name="{Joy7}"/>
+        <KeyWord name="{Joy8}"/>
+        <KeyWord name="{Joy9}"/>
+        <KeyWord name="{Joy10}"/>
+        <KeyWord name="{Joy11}"/>
+        <KeyWord name="{Joy12}"/>
+        <KeyWord name="{Joy13}"/>
+        <KeyWord name="{Joy14}"/>
+        <KeyWord name="{Joy15}"/>
+        <KeyWord name="{Joy16}"/>
+        <KeyWord name="{Joy17}"/>
+        <KeyWord name="{Joy18}"/>
+        <KeyWord name="{Joy19}"/>
+        <KeyWord name="{Joy20}"/>
+        <KeyWord name="{Joy21}"/>
+        <KeyWord name="{Joy22}"/>
+        <KeyWord name="{Joy23}"/>
+        <KeyWord name="{Joy24}"/>
+        <KeyWord name="{Joy25}"/>
+        <KeyWord name="{Joy26}"/>
+        <KeyWord name="{Joy27}"/>
+        <KeyWord name="{Joy28}"/>
+        <KeyWord name="{Joy29}"/>
+        <KeyWord name="{Joy30}"/>
+        <KeyWord name="{Joy31}"/>
+        <KeyWord name="{Joy32}"/>
+        <KeyWord name="{JoyAxes}"/>
+        <KeyWord name="{JoyButtons}"/>
+        <KeyWord name="{JoyInfo}"/>
+        <KeyWord name="{JoyName}"/>
+        <KeyWord name="{JoyPOV}"/>
+        <KeyWord name="{JoyR}"/>
+        <KeyWord name="{JoyU}"/>
+        <KeyWord name="{JoyV}"/>
+        <KeyWord name="{JoyX}"/>
+        <KeyWord name="{JoyY}"/>
+        <KeyWord name="{JoyZ}"/>
+        <KeyWord name="{LAlt}"/>
+        <KeyWord name="{Launch_App1}"/>
+        <KeyWord name="{Launch_App2}"/>
+        <KeyWord name="{Launch_Mail}"/>
+        <KeyWord name="{Launch_Media}"/>
+        <KeyWord name="{LButton}"/>
+        <KeyWord name="{LControl}"/>
+        <KeyWord name="{LCtrl}"/>
+        <KeyWord name="{Left}"/>
+        <KeyWord name="{LShift}"/>
+        <KeyWord name="{LWin}"/>
+        <KeyWord name="{LWinDown}"/>
+        <KeyWord name="{MButton}"/>
+        <KeyWord name="{Media_Next}"/>
+        <KeyWord name="{Media_Play_Pause}"/>
+        <KeyWord name="{Media_Prev}"/>
+        <KeyWord name="{Media_Stop}"/>
+        <KeyWord name="{NumLock}"/>
+        <KeyWord name="{Numpad0}"/>
+        <KeyWord name="{Numpad1}"/>
+        <KeyWord name="{Numpad2}"/>
+        <KeyWord name="{Numpad3}"/>
+        <KeyWord name="{Numpad4}"/>
+        <KeyWord name="{Numpad5}"/>
+        <KeyWord name="{Numpad6}"/>
+        <KeyWord name="{Numpad7}"/>
+        <KeyWord name="{Numpad8}"/>
+        <KeyWord name="{Numpad9}"/>
+        <KeyWord name="{NumpadAdd}"/>
+        <KeyWord name="{NumpadClear}"/>
+        <KeyWord name="{NumpadDel}"/>
+        <KeyWord name="{NumpadDiv}"/>
+        <KeyWord name="{NumpadDot}"/>
+        <KeyWord name="{NumpadDown}"/>
+        <KeyWord name="{NumpadEnd}"/>
+        <KeyWord name="{NumpadEnter}"/>
+        <KeyWord name="{NumpadHome}"/>
+        <KeyWord name="{NumpadIns}"/>
+        <KeyWord name="{NumpadLeft}"/>
+        <KeyWord name="{NumpadMult}"/>
+        <KeyWord name="{NumpadPgdn}"/>
+        <KeyWord name="{NumpadPgup}"/>
+        <KeyWord name="{NumpadRight}"/>
+        <KeyWord name="{NumpadSub}"/>
+        <KeyWord name="{NumpadUp}"/>
+        <KeyWord name="{Pause}"/>
+        <KeyWord name="{PGDN}"/>
+        <KeyWord name="{PGUP}"/>
+        <KeyWord name="{PrintScreen}"/>
+        <KeyWord name="{RAlt}"/>
+        <KeyWord name="{Raw}"/>
+        <KeyWord name="{RButton}"/>
+        <KeyWord name="{RControl}"/>
+        <KeyWord name="{RCtrl}"/>
+        <KeyWord name="{Right}"/>
+        <KeyWord name="{RShift}"/>
+        <KeyWord name="{RWin}"/>
+        <KeyWord name="{RWinDown}"/>
+        <KeyWord name="{ScrollLock}"/>
+        <KeyWord name="{Shift}"/>
+        <KeyWord name="{ShiftDown}"/>
+        <KeyWord name="{ShiftUp}"/>
+        <KeyWord name="{Space}"/>
+        <KeyWord name="{Tab}"/>
+        <KeyWord name="{Up}"/>
+        <KeyWord name="{Volume_Down}"/>
+        <KeyWord name="{Volume_Mute}"/>
+        <KeyWord name="{Volume_Up}"/>
+        <KeyWord name="{WheelDown}"/>
+        <KeyWord name="{WheelUp}"/>
+        <KeyWord name="{XButton1}"/>
+        <KeyWord name="{XButton2}"/>
+        <KeyWord name="A_AHKPath"/>
+        <KeyWord name="A_AHKVersion"/>
+        <KeyWord name="A_AppData"/>
+        <KeyWord name="A_AppDataCommon"/>
+        <KeyWord name="A_AutoTrim"/>
+        <KeyWord name="A_BatchLines"/>
+        <KeyWord name="A_CaretX"/>
+        <KeyWord name="A_CaretY"/>
+        <KeyWord name="A_ComputerName"/>
+        <KeyWord name="A_ControlDelay"/>
+        <KeyWord name="A_Cursor"/>
+        <KeyWord name="A_DD"/>
+        <KeyWord name="A_DDD"/>
+        <KeyWord name="A_DDDD"/>
+        <KeyWord name="A_DefaultMouseSpeed"/>
+        <KeyWord name="A_Desktop"/>
+        <KeyWord name="A_DesktopCommon"/>
+        <KeyWord name="A_DetectHiddenText"/>
+        <KeyWord name="A_DetectHiddenWindows"/>
+        <KeyWord name="A_EndChar"/>
+        <KeyWord name="A_EventInfo"/>
+        <KeyWord name="A_ExitReason"/>
+        <KeyWord name="A_FormatFloat"/>
+        <KeyWord name="A_FormatInteger"/>
+        <KeyWord name="A_Gui"/>
+        <KeyWord name="A_GuiControl"/>
+        <KeyWord name="A_GuiControlevent"/>
+        <KeyWord name="A_GuiEvent"/>
+        <KeyWord name="A_GuiHeight"/>
+        <KeyWord name="A_GuiWidth"/>
+        <KeyWord name="A_GuiX"/>
+        <KeyWord name="A_GuiY"/>
+        <KeyWord name="A_Hour"/>
+        <KeyWord name="A_IconFile"/>
+        <KeyWord name="A_IconHidden"/>
+        <KeyWord name="A_IconNumber"/>
+        <KeyWord name="A_IconTip"/>
+        <KeyWord name="A_Index"/>
+        <KeyWord name="A_IPAddress1"/>
+        <KeyWord name="A_IPAddress2"/>
+        <KeyWord name="A_IPAddress3"/>
+        <KeyWord name="A_IPAddress4"/>
+        <KeyWord name="A_IsAdmin"/>
+        <KeyWord name="A_IsCompiled"/>
+        <KeyWord name="A_IsCritical"/>
+        <KeyWord name="A_IsPaused"/>
+        <KeyWord name="A_IsSuspended"/>
+        <KeyWord name="A_IsUnicode"/>
+        <KeyWord name="A_KeyDelay"/>
+        <KeyWord name="A_Language"/>
+        <KeyWord name="A_LastError"/>
+        <KeyWord name="A_LineFile"/>
+        <KeyWord name="A_LineNumber"/>
+        <KeyWord name="A_LoopField"/>
+        <KeyWord name="A_LoopFileAttrib"/>
+        <KeyWord name="A_LoopFileDir"/>
+        <KeyWord name="A_LoopFileExt"/>
+        <KeyWord name="A_LoopFileFullPath"/>
+        <KeyWord name="A_LoopFileLongPath"/>
+        <KeyWord name="A_LoopFileName"/>
+        <KeyWord name="A_LoopFileShortName"/>
+        <KeyWord name="A_LoopFileShortPath"/>
+        <KeyWord name="A_LoopFileSize"/>
+        <KeyWord name="A_LoopFileSizeKB"/>
+        <KeyWord name="A_LoopFileSizeMB"/>
+        <KeyWord name="A_LoopFileTimeAccessed"/>
+        <KeyWord name="A_LoopFileTimeCreated"/>
+        <KeyWord name="A_LoopFileTimeModified"/>
+        <KeyWord name="A_LoopReadLine"/>
+        <KeyWord name="A_LoopRegKey"/>
+        <KeyWord name="A_LoopRegName"/>
+        <KeyWord name="A_LoopRegSubKey"/>
+        <KeyWord name="A_LoopRegTimeModified"/>
+        <KeyWord name="A_LoopRegType"/>
+        <KeyWord name="A_MDay"/>
+        <KeyWord name="A_Min"/>
+        <KeyWord name="A_MM"/>
+        <KeyWord name="A_MMM"/>
+        <KeyWord name="A_MMMM"/>
+        <KeyWord name="A_Mon"/>
+        <KeyWord name="A_MouseDelay"/>
+        <KeyWord name="A_MSec"/>
+        <KeyWord name="A_MyDocuments"/>
+        <KeyWord name="A_Now"/>
+        <KeyWord name="A_NowUTC"/>
+        <KeyWord name="A_NumBatchLines"/>
+        <KeyWord name="A_OSType"/>
+        <KeyWord name="A_OSVersion"/>
+        <KeyWord name="A_PriorHotkey"/>
+        <KeyWord name="A_PriorKey"/>
+        <KeyWord name="A_ProgramFiles"/>
+        <KeyWord name="A_Programs"/>
+        <KeyWord name="A_ProgramsCommon"/>
+        <KeyWord name="A_PtrSize"/>
+        <KeyWord name="A_ScreenHeight"/>
+        <KeyWord name="A_ScreenWidth"/>
+        <KeyWord name="A_ScriptDir"/>
+        <KeyWord name="A_ScriptFullPath"/>
+        <KeyWord name="A_ScriptHwnd"/>
+        <KeyWord name="A_ScriptName"/>
+        <KeyWord name="A_Sec"/>
+        <KeyWord name="A_Space"/>
+        <KeyWord name="A_StartMenu"/>
+        <KeyWord name="A_StartMenuCommon"/>
+        <KeyWord name="A_StartUp"/>
+        <KeyWord name="A_StartUpcommon"/>
+        <KeyWord name="A_StringCaseSense"/>
+        <KeyWord name="A_Tab"/>
+        <KeyWord name="A_Temp"/>
+        <KeyWord name="A_ThisFunc"/>
+        <KeyWord name="A_ThisHotkey"/>
+        <KeyWord name="A_ThisLabel"/>
+        <KeyWord name="A_ThisMenu"/>
+        <KeyWord name="A_ThisMenuItem"/>
+        <KeyWord name="A_ThisMenuItemPos"/>
+        <KeyWord name="A_TickCount"/>
+        <KeyWord name="A_TimeIdle"/>
+        <KeyWord name="A_TimeIdlePhysical"/>
+        <KeyWord name="A_TimeSincePriorHotkey"/>
+        <KeyWord name="A_TimeSinceThisHotkey"/>
+        <KeyWord name="A_TitleMatchMode"/>
+        <KeyWord name="A_TitleMatchModeSpeed"/>
+        <KeyWord name="A_Username"/>
+        <KeyWord name="A_WDay"/>
+        <KeyWord name="A_WinDelay"/>
+        <KeyWord name="A_WinDir"/>
+        <KeyWord name="A_WorkingDir"/>
+        <KeyWord name="A_YDay"/>
+        <KeyWord name="A_Year"/>
+        <KeyWord name="A_YWeek"/>
+        <KeyWord name="A_YYYY"/>
+        <KeyWord name="Abort"/>
+        <KeyWord name="AboveNormal"/>
+        <KeyWord name="Abs" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ACos" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ActiveX"/>
+        <KeyWord name="Add"/>
+        <KeyWord name="AHK_class"/>
+        <KeyWord name="AHK_exe"/>
+        <KeyWord name="AHK_group"/>
+        <KeyWord name="AHK_id"/>
+        <KeyWord name="AHK_pid"/>
+        <KeyWord name="All"/>
+        <KeyWord name="Alnum"/>
+        <KeyWord name="Alpha"/>
+        <KeyWord name="Alt"/>
+        <KeyWord name="AltDown"/>
+        <KeyWord name="AltSubmit"/>
+        <KeyWord name="AltTab"/>
+        <KeyWord name="AltTabAndMenu"/>
+        <KeyWord name="AltTabMenu"/>
+        <KeyWord name="AltTabMenuDismiss"/>
+        <KeyWord name="AltUp"/>
+        <KeyWord name="AlwaysOnTop"/>
+        <KeyWord name="And"/>
+        <KeyWord name="AppsKey"/>
+        <KeyWord name="Array"/>
+        <KeyWord name="Asc" func="yes">
+            <Overload retVal="">
+                <Param name="String"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ASin" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATan" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Autosize"/>
+        <KeyWord name="AutoTrim"/>
+        <KeyWord name="Background"/>
+        <KeyWord name="BackgroundTrans"/>
+        <KeyWord name="BackSpace"/>
+        <KeyWord name="Base"/>
+        <KeyWord name="BelowNormal"/>
+        <KeyWord name="Between"/>
+        <KeyWord name="BitAnd"/>
+        <KeyWord name="BitNot"/>
+        <KeyWord name="BitOr"/>
+        <KeyWord name="BitShiftLeft"/>
+        <KeyWord name="BitShiftRight"/>
+        <KeyWord name="BitXOr"/>
+        <KeyWord name="Blind"/>
+        <KeyWord name="BlockInput"/>
+        <KeyWord name="Bold"/>
+        <KeyWord name="Border"/>
+        <KeyWord name="Bottom"/>
+        <KeyWord name="Break"/>
+        <KeyWord name="Browser_Back"/>
+        <KeyWord name="Browser_Favorites"/>
+        <KeyWord name="Browser_Forward"/>
+        <KeyWord name="Browser_Home"/>
+        <KeyWord name="Browser_Refresh"/>
+        <KeyWord name="Browser_Search"/>
+        <KeyWord name="Browser_Stop"/>
+        <KeyWord name="BS"/>
+        <KeyWord name="Button"/>
+        <KeyWord name="Buttons"/>
+        <KeyWord name="ByRef"/>
+        <KeyWord name="Cancel"/>
+        <KeyWord name="Capacity"/>
+        <KeyWord name="Capslock"/>
+        <KeyWord name="Caption"/>
+        <KeyWord name="Ceil" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Center"/>
+        <KeyWord name="Check"/>
+        <KeyWord name="Check3"/>
+        <KeyWord name="Checkbox"/>
+        <KeyWord name="Checked"/>
+        <KeyWord name="CheckedGray"/>
+        <KeyWord name="Choose"/>
+        <KeyWord name="ChooseString"/>
+        <KeyWord name="Chr" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Click"/>
+        <KeyWord name="Clipboard"/>
+        <KeyWord name="Clipboardall"/>
+        <KeyWord name="ClipWait"/>
+        <KeyWord name="Close"/>
+        <KeyWord name="Color"/>
+        <KeyWord name="Combobox"/>
+        <KeyWord name="ComObjActive"/>
+        <KeyWord name="ComObjArray"/>
+        <KeyWord name="ComObjConnect"/>
+        <KeyWord name="ComObjCreate"/>
+        <KeyWord name="ComObjEnwrap"/>
+        <KeyWord name="ComObjError"/>
+        <KeyWord name="ComObjFlags"/>
+        <KeyWord name="ComObjGet"/>
+        <KeyWord name="ComObjMissing"/>
+        <KeyWord name="ComObjParameter"/>
+        <KeyWord name="ComObjQuery"/>
+        <KeyWord name="ComObjType"/>
+        <KeyWord name="ComObjUnwrap"/>
+        <KeyWord name="ComObjValue"/>
+        <KeyWord name="Comspec"/>
+        <KeyWord name="Contains"/>
+        <KeyWord name="Continue"/>
+        <KeyWord name="Control"/>
+        <KeyWord name="ControlClick"/>
+        <KeyWord name="ControlFocus"/>
+        <KeyWord name="ControlGet"/>
+        <KeyWord name="ControlGetFocus"/>
+        <KeyWord name="ControlGetPos"/>
+        <KeyWord name="ControlGetText"/>
+        <KeyWord name="ControlList"/>
+        <KeyWord name="ControlListHWND"/>
+        <KeyWord name="ControlMove"/>
+        <KeyWord name="ControlSend"/>
+        <KeyWord name="ControlSendRaw"/>
+        <KeyWord name="ControlSetText"/>
+        <KeyWord name="CoordMode"/>
+        <KeyWord name="Cos" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Count"/>
+        <KeyWord name="Critical"/>
+        <KeyWord name="Ctrl"/>
+        <KeyWord name="CtrlBreak"/>
+        <KeyWord name="CtrlDown"/>
+        <KeyWord name="CtrlUp"/>
+        <KeyWord name="Date"/>
+        <KeyWord name="DateTime"/>
+        <KeyWord name="Days"/>
+        <KeyWord name="DDL"/>
+        <KeyWord name="Default"/>
+        <KeyWord name="Del"/>
+        <KeyWord name="Delete"/>
+        <KeyWord name="DeleteAll"/>
+        <KeyWord name="Delimiter"/>
+        <KeyWord name="Deref"/>
+        <KeyWord name="Destroy"/>
+        <KeyWord name="DetectHiddenText"/>
+        <KeyWord name="DetectHiddenWindows"/>
+        <KeyWord name="Digit"/>
+        <KeyWord name="Disable"/>
+        <KeyWord name="Disabled"/>
+        <KeyWord name="DllCall" func="yes">
+            <Overload retVal="">
+                <Param name="&quot;DllFile\Function&quot;"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="&quot;DllFile\Function&quot;"/>
+                <Param name="Type1"/>
+                <Param name="Arg1"/>
+                <Param name="Type2"/>
+                <Param name="Arg2"/>
+                <Param name="&quot;Cdecl ReturnType&quot;"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Down"/>
+        <KeyWord name="Drive"/>
+        <KeyWord name="DriveGet"/>
+        <KeyWord name="DriveSpaceFree"/>
+        <KeyWord name="DropDownList"/>
+        <KeyWord name="Edit"/>
+        <KeyWord name="Eject"/>
+        <KeyWord name="Else"/>
+        <KeyWord name="Enable"/>
+        <KeyWord name="Enabled"/>
+        <KeyWord name="End"/>
+        <KeyWord name="EndRepeat"/>
+        <KeyWord name="Enter"/>
+        <KeyWord name="EnvAdd"/>
+        <KeyWord name="EnvDiv"/>
+        <KeyWord name="EnvGet"/>
+        <KeyWord name="EnvMult"/>
+        <KeyWord name="EnvSet"/>
+        <KeyWord name="EnvSub"/>
+        <KeyWord name="EnvUpdate"/>
+        <KeyWord name="Error"/>
+        <KeyWord name="ErrorLevel"/>
+        <KeyWord name="Esc"/>
+        <KeyWord name="Escape"/>
+        <KeyWord name="Exception"/>
+        <KeyWord name="Exit"/>
+        <KeyWord name="ExitApp"/>
+        <KeyWord name="Exp" func="yes">
+            <Overload retVal="">
+                <Param name="N"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Expand"/>
+        <KeyWord name="ExStyle"/>
+        <KeyWord name="Extends"/>
+        <KeyWord name="F1"/>
+        <KeyWord name="F2"/>
+        <KeyWord name="F3"/>
+        <KeyWord name="F4"/>
+        <KeyWord name="F5"/>
+        <KeyWord name="F6"/>
+        <KeyWord name="F7"/>
+        <KeyWord name="F8"/>
+        <KeyWord name="F9"/>
+        <KeyWord name="F10"/>
+        <KeyWord name="F11"/>
+        <KeyWord name="F12"/>
+        <KeyWord name="F13"/>
+        <KeyWord name="F14"/>
+        <KeyWord name="F15"/>
+        <KeyWord name="F16"/>
+        <KeyWord name="F17"/>
+        <KeyWord name="F18"/>
+        <KeyWord name="F19"/>
+        <KeyWord name="F20"/>
+        <KeyWord name="F21"/>
+        <KeyWord name="F22"/>
+        <KeyWord name="F23"/>
+        <KeyWord name="F24"/>
+        <KeyWord name="False"/>
+        <KeyWord name="FileAppend"/>
+        <KeyWord name="FileCopy"/>
+        <KeyWord name="FileCopyDir"/>
+        <KeyWord name="FileCreateDir"/>
+        <KeyWord name="FileCreateShortcut"/>
+        <KeyWord name="FileDelete"/>
+        <KeyWord name="FileEncoding"/>
+        <KeyWord name="FileExist" func="yes">
+            <Overload retVal="">
+                <Param name="FilePattern"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FileGetAttrib"/>
+        <KeyWord name="FileGetShortcut"/>
+        <KeyWord name="FileGetSize"/>
+        <KeyWord name="FileGetTime"/>
+        <KeyWord name="FileGetVersion"/>
+        <KeyWord name="FileInstall"/>
+        <KeyWord name="FileMove"/>
+        <KeyWord name="FileMoveDir"/>
+        <KeyWord name="FileOpen"/>
+        <KeyWord name="FileRead"/>
+        <KeyWord name="FileReadLine"/>
+        <KeyWord name="FileRecycle"/>
+        <KeyWord name="FileRecycleEmpty"/>
+        <KeyWord name="FileRemoveDir"/>
+        <KeyWord name="FileSelectFile"/>
+        <KeyWord name="FileSelectFolder"/>
+        <KeyWord name="FileSetAttrib"/>
+        <KeyWord name="FileSetTime"/>
+        <KeyWord name="FileSystem"/>
+        <KeyWord name="First"/>
+        <KeyWord name="Flash"/>
+        <KeyWord name="Float"/>
+        <KeyWord name="Floatfast"/>
+        <KeyWord name="Floor" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Focus"/>
+        <KeyWord name="Font"/>
+        <KeyWord name="Force"/>
+        <KeyWord name="FormatTime"/>
+        <KeyWord name="Func"/>
+        <KeyWord name="GetKeyName"/>
+        <KeyWord name="GetKeySC"/>
+        <KeyWord name="GetKeyState" func="yes">
+            <Overload retVal="">
+                <Param name="KeyName"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="KeyName"/>
+                <Param name="&quot;P&quot; or &quot;T&quot;"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="GetKeyVK"/>
+        <KeyWord name="Global"/>
+        <KeyWord name="Gosub"/>
+        <KeyWord name="Goto"/>
+        <KeyWord name="Grid"/>
+        <KeyWord name="Group"/>
+        <KeyWord name="GroupActivate"/>
+        <KeyWord name="GroupAdd"/>
+        <KeyWord name="GroupBox"/>
+        <KeyWord name="GroupClose"/>
+        <KeyWord name="GroupDeactivate"/>
+        <KeyWord name="Gui"/>
+        <KeyWord name="GuiClose"/>
+        <KeyWord name="GuiContextMenu"/>
+        <KeyWord name="GuiControl"/>
+        <KeyWord name="GuiControlGet"/>
+        <KeyWord name="GuiDropFiles"/>
+        <KeyWord name="GuiEscape"/>
+        <KeyWord name="GuiSize"/>
+        <KeyWord name="Hdr"/>
+        <KeyWord name="Hidden"/>
+        <KeyWord name="Hide"/>
+        <KeyWord name="HideAutoItWin"/>
+        <KeyWord name="High"/>
+        <KeyWord name="HKCC"/>
+        <KeyWord name="HKCR"/>
+        <KeyWord name="HKCU"/>
+        <KeyWord name="HKEY_CLASSES_ROOT"/>
+        <KeyWord name="HKEY_CURRENT_CONFIG"/>
+        <KeyWord name="HKEY_CURRENT_USER"/>
+        <KeyWord name="HKEY_CURRENT_USER"/>
+        <KeyWord name="HKEY_LOCAL_MACHINE"/>
+        <KeyWord name="HKEY_USERS"/>
+        <KeyWord name="HKLM"/>
+        <KeyWord name="Hku"/>
+        <KeyWord name="Home"/>
+        <KeyWord name="Hotkey"/>
+        <KeyWord name="Hours"/>
+        <KeyWord name="HScroll"/>
+        <KeyWord name="Hwnd"/>
+        <KeyWord name="Icon"/>
+        <KeyWord name="IconSmall"/>
+        <KeyWord name="ID"/>
+        <KeyWord name="IDLast"/>
+        <KeyWord name="If" func="yes">
+            <Overload retVal="">
+                <Param name="expression"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="IfEqual"/>
+        <KeyWord name="IfExist"/>
+        <KeyWord name="IfGreater"/>
+        <KeyWord name="IfGreaterOrEqual"/>
+        <KeyWord name="IfInString"/>
+        <KeyWord name="IfLess"/>
+        <KeyWord name="IfLessOrEqual"/>
+        <KeyWord name="IfMsgBox"/>
+        <KeyWord name="IfNotEqual"/>
+        <KeyWord name="IfNotExist"/>
+        <KeyWord name="IfNotInString"/>
+        <KeyWord name="IfWinActive"/>
+        <KeyWord name="IfWinExist"/>
+        <KeyWord name="IfWinNotActive"/>
+        <KeyWord name="IfWinNotExist"/>
+        <KeyWord name="Ignore"/>
+        <KeyWord name="IL_Add"/>
+        <KeyWord name="IL_Create"/>
+        <KeyWord name="IL_Destroy"/>
+        <KeyWord name="ImageList"/>
+        <KeyWord name="ImageSearch"/>
+        <KeyWord name="In"/>
+        <KeyWord name="IniDelete"/>
+        <KeyWord name="IniRead"/>
+        <KeyWord name="IniWrite"/>
+        <KeyWord name="Input"/>
+        <KeyWord name="InputBox"/>
+        <KeyWord name="Ins"/>
+        <KeyWord name="Insert"/>
+        <KeyWord name="InStr" func="yes">
+            <Overload retVal="">
+                <Param name="Haystack"/>
+                <Param name="Needle"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="Haystack"/>
+                <Param name="Needle"/>
+                <Param name="CaseSensitive = false"/>
+                <Param name="StartingPos = 1"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Integer"/>
+        <KeyWord name="IntegerFast"/>
+        <KeyWord name="Interrupt"/>
+        <KeyWord name="Is"/>
+        <KeyWord name="IsByref"/>
+        <KeyWord name="IsFunc" func="yes">
+            <Overload retVal="">
+                <Param name="FunctionName"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="IsLabel" func="yes">
+            <Overload retVal="">
+                <Param name="LabelName"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="IsObject"/>
+        <KeyWord name="Italic"/>
+        <KeyWord name="Joy1"/>
+        <KeyWord name="Joy2"/>
+        <KeyWord name="Joy3"/>
+        <KeyWord name="Joy4"/>
+        <KeyWord name="Joy5"/>
+        <KeyWord name="Joy6"/>
+        <KeyWord name="Joy7"/>
+        <KeyWord name="Joy8"/>
+        <KeyWord name="Joy9"/>
+        <KeyWord name="Joy10"/>
+        <KeyWord name="Joy11"/>
+        <KeyWord name="Joy12"/>
+        <KeyWord name="Joy13"/>
+        <KeyWord name="Joy14"/>
+        <KeyWord name="Joy15"/>
+        <KeyWord name="Joy16"/>
+        <KeyWord name="Joy17"/>
+        <KeyWord name="Joy18"/>
+        <KeyWord name="Joy19"/>
+        <KeyWord name="Joy20"/>
+        <KeyWord name="Joy21"/>
+        <KeyWord name="Joy22"/>
+        <KeyWord name="Joy23"/>
+        <KeyWord name="Joy24"/>
+        <KeyWord name="Joy25"/>
+        <KeyWord name="Joy26"/>
+        <KeyWord name="Joy27"/>
+        <KeyWord name="Joy28"/>
+        <KeyWord name="Joy29"/>
+        <KeyWord name="Joy30"/>
+        <KeyWord name="Joy31"/>
+        <KeyWord name="Joy32"/>
+        <KeyWord name="JoyAxes"/>
+        <KeyWord name="JoyButtons"/>
+        <KeyWord name="JoyInfo"/>
+        <KeyWord name="JoyName"/>
+        <KeyWord name="JoyPOV"/>
+        <KeyWord name="JoyR"/>
+        <KeyWord name="JoyU"/>
+        <KeyWord name="JoyV"/>
+        <KeyWord name="Joyx"/>
+        <KeyWord name="JoyY"/>
+        <KeyWord name="JoyZ"/>
+        <KeyWord name="KeyHistory"/>
+        <KeyWord name="KeyWait"/>
+        <KeyWord name="Label"/>
+        <KeyWord name="LAlt"/>
+        <KeyWord name="LastFound"/>
+        <KeyWord name="LastFoundExist"/>
+        <KeyWord name="Launch_App1"/>
+        <KeyWord name="Launch_App2"/>
+        <KeyWord name="Launch_Mail"/>
+        <KeyWord name="Launch_Media"/>
+        <KeyWord name="LButton"/>
+        <KeyWord name="LControl"/>
+        <KeyWord name="LCtrl"/>
+        <KeyWord name="Left"/>
+        <KeyWord name="LeftClick"/>
+        <KeyWord name="LeftClickDrag"/>
+        <KeyWord name="Limit"/>
+        <KeyWord name="Lines"/>
+        <KeyWord name="Link"/>
+        <KeyWord name="List"/>
+        <KeyWord name="ListBox"/>
+        <KeyWord name="ListHotkeys"/>
+        <KeyWord name="ListLines"/>
+        <KeyWord name="ListVars"/>
+        <KeyWord name="ListView"/>
+        <KeyWord name="Ln" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Local"/>
+        <KeyWord name="Lock"/>
+        <KeyWord name="Log" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LogOff"/>
+        <KeyWord name="Loop " func="yes">
+            <Overload retVal="">
+                <Param name="files &amp; folders"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="normal"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="parse a string"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="read file contents"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="registry"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Low"/>
+        <KeyWord name="Lower"/>
+        <KeyWord name="Lowercase"/>
+        <KeyWord name="LShift"/>
+        <KeyWord name="LTrim"/>
+        <KeyWord name="LV_Add"/>
+        <KeyWord name="LV_Delete"/>
+        <KeyWord name="LV_DeleteCol"/>
+        <KeyWord name="LV_GetCount"/>
+        <KeyWord name="LV_GetNext"/>
+        <KeyWord name="LV_GetText"/>
+        <KeyWord name="LV_Insert"/>
+        <KeyWord name="LV_InsertCol"/>
+        <KeyWord name="LV_Modify"/>
+        <KeyWord name="LV_ModifyCol"/>
+        <KeyWord name="LV_SetImagelist"/>
+        <KeyWord name="LWin"/>
+        <KeyWord name="LWinDown"/>
+        <KeyWord name="LWinUp"/>
+        <KeyWord name="MainWindow"/>
+        <KeyWord name="Margin"/>
+        <KeyWord name="Maximize"/>
+        <KeyWord name="MaximizeBox"/>
+        <KeyWord name="MButton"/>
+        <KeyWord name="Media_Next"/>
+        <KeyWord name="Media_Play_Pause"/>
+        <KeyWord name="Media_Prev"/>
+        <KeyWord name="Media_Stop"/>
+        <KeyWord name="Menu"/>
+        <KeyWord name="Minimize"/>
+        <KeyWord name="MinimizeBox"/>
+        <KeyWord name="MinMax"/>
+        <KeyWord name="Minutes"/>
+        <KeyWord name="Mod" func="yes">
+            <Overload retVal="">
+                <Param name="Dividend"/>
+                <Param name="Divisor"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MonitorCount"/>
+        <KeyWord name="MonitorName"/>
+        <KeyWord name="MonitorPrimary"/>
+        <KeyWord name="MonitorWorkArea"/>
+        <KeyWord name="MonthCal"/>
+        <KeyWord name="Mouse"/>
+        <KeyWord name="MouseClick"/>
+        <KeyWord name="MouseClickDrag"/>
+        <KeyWord name="MouseGetPos"/>
+        <KeyWord name="MouseMove"/>
+        <KeyWord name="MouseMoveOff"/>
+        <KeyWord name="Move"/>
+        <KeyWord name="MsgBox"/>
+        <KeyWord name="Multi"/>
+        <KeyWord name="Na"/>
+        <KeyWord name="New"/>
+        <KeyWord name="No"/>
+        <KeyWord name="NoActivate"/>
+        <KeyWord name="NoDefault"/>
+        <KeyWord name="NoHide"/>
+        <KeyWord name="NoIcon"/>
+        <KeyWord name="NoMainWindow"/>
+        <KeyWord name="Norm"/>
+        <KeyWord name="Normal"/>
+        <KeyWord name="NoSort"/>
+        <KeyWord name="NoSortHDR"/>
+        <KeyWord name="NoStandard"/>
+        <KeyWord name="Not"/>
+        <KeyWord name="NoTab"/>
+        <KeyWord name="NoTimers"/>
+        <KeyWord name="Number"/>
+        <KeyWord name="NumGet" func="yes">
+            <Overload retVal="">
+                <Param name="VarOrAddress"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="VarOrAddress"/>
+                <Param name="Offset = 0"/>
+                <Param name="Type = &quot;UInt&quot;"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NumLock"/>
+        <KeyWord name="Numpad0"/>
+        <KeyWord name="Numpad1"/>
+        <KeyWord name="Numpad2"/>
+        <KeyWord name="Numpad3"/>
+        <KeyWord name="Numpad4"/>
+        <KeyWord name="Numpad5"/>
+        <KeyWord name="Numpad6"/>
+        <KeyWord name="Numpad7"/>
+        <KeyWord name="Numpad8"/>
+        <KeyWord name="Numpad9"/>
+        <KeyWord name="NumpadAdd"/>
+        <KeyWord name="NumpadClear"/>
+        <KeyWord name="NumpadDel"/>
+        <KeyWord name="NumpadDiv"/>
+        <KeyWord name="NumpadDot"/>
+        <KeyWord name="NumpadDown"/>
+        <KeyWord name="NumpadEnd"/>
+        <KeyWord name="NumpadEnter"/>
+        <KeyWord name="NumpadHome"/>
+        <KeyWord name="NumpadIns"/>
+        <KeyWord name="NumpadLeft"/>
+        <KeyWord name="NumpadMult"/>
+        <KeyWord name="NumpadPgdn"/>
+        <KeyWord name="NumpadPgup"/>
+        <KeyWord name="NumpadRight"/>
+        <KeyWord name="NumpadSub"/>
+        <KeyWord name="NumpadUp"/>
+        <KeyWord name="NumPut" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+                <Param name="VarOrAddress"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="Number"/>
+                <Param name="VarOrAddress"/>
+                <Param name="Offset = 0"/>
+                <Param name="Type = &quot;UInt&quot;"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ObjAddRef"/>
+        <KeyWord name="ObjClone"/>
+        <KeyWord name="Object"/>
+        <KeyWord name="ObjGetAddress"/>
+        <KeyWord name="ObjGetCapacity"/>
+        <KeyWord name="ObjHasKey"/>
+        <KeyWord name="ObjInsert"/>
+        <KeyWord name="ObjMaxIndex"/>
+        <KeyWord name="ObjMinIndex"/>
+        <KeyWord name="ObjNewEnum"/>
+        <KeyWord name="ObjRelease"/>
+        <KeyWord name="ObjRemove"/>
+        <KeyWord name="ObjSetCapacity"/>
+        <KeyWord name="Off"/>
+        <KeyWord name="Ok"/>
+        <KeyWord name="On"/>
+        <KeyWord name="OnExit"/>
+        <KeyWord name="OnMessage" func="yes">
+            <Overload retVal="">
+                <Param name="MsgNumber"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="MsgNumber"/>
+                <Param name="&quot;FunctionName&quot;"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Or"/>
+        <KeyWord name="OutputDebug"/>
+        <KeyWord name="OwnDialogs"/>
+        <KeyWord name="Owner"/>
+        <KeyWord name="Parse"/>
+        <KeyWord name="Password"/>
+        <KeyWord name="Pause"/>
+        <KeyWord name="Pgdn"/>
+        <KeyWord name="Pgup"/>
+        <KeyWord name="Pic"/>
+        <KeyWord name="Picture"/>
+        <KeyWord name="Pid"/>
+        <KeyWord name="Pixel"/>
+        <KeyWord name="PixelGetColor"/>
+        <KeyWord name="PixelSearch"/>
+        <KeyWord name="Pos"/>
+        <KeyWord name="PostMessage"/>
+        <KeyWord name="Pow"/>
+        <KeyWord name="PrintScreen"/>
+        <KeyWord name="Priority"/>
+        <KeyWord name="Process"/>
+        <KeyWord name="ProcessName"/>
+        <KeyWord name="ProcessPath"/>
+        <KeyWord name="ProgramFiles"/>
+        <KeyWord name="Progress"/>
+        <KeyWord name="Radio"/>
+        <KeyWord name="RAlt"/>
+        <KeyWord name="Random"/>
+        <KeyWord name="Range"/>
+        <KeyWord name="Raw"/>
+        <KeyWord name="RButton"/>
+        <KeyWord name="RControl"/>
+        <KeyWord name="RCtrl"/>
+        <KeyWord name="Read"/>
+        <KeyWord name="ReadOnly"/>
+        <KeyWord name="RealTime"/>
+        <KeyWord name="Redraw"/>
+        <KeyWord name="Reg_Binary"/>
+        <KeyWord name="Reg_DWord"/>
+        <KeyWord name="Reg_DWord_Big_Endian"/>
+        <KeyWord name="Reg_Expand_SZ"/>
+        <KeyWord name="Reg_Full_Resource_Descriptor"/>
+        <KeyWord name="Reg_Link"/>
+        <KeyWord name="REG_MULTI_SZ"/>
+        <KeyWord name="Reg_QWord"/>
+        <KeyWord name="Reg_Resource_List"/>
+        <KeyWord name="Reg_Resource_Requirements_List"/>
+        <KeyWord name="Reg_SZ"/>
+        <KeyWord name="RegDelete"/>
+        <KeyWord name="Regex"/>
+        <KeyWord name="RegExMatch" func="yes">
+            <Overload retVal="">
+                <Param name="Haystack"/>
+                <Param name="NeedleRegEx"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="Haystack"/>
+                <Param name="NeedleRegEx"/>
+                <Param name="UnquotedOutputVar = &quot;&quot;"/>
+                <Param name="StartingPos = 1"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="RegExReplace" func="yes">
+            <Overload retVal="">
+                <Param name="Haystack"/>
+                <Param name="NeedleRegEx"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="Haystack"/>
+                <Param name="NeedleRegEx"/>
+                <Param name="Replacement = &quot;&quot;"/>
+                <Param name="OutputVarCount = &quot;&quot;"/>
+                <Param name="Limit = -1"/>
+                <Param name="StartingPos = 1"/>
+            </Overload>
+        </KeyWord>
+
+        <KeyWord name="Region"/>
+        <KeyWord name="RegisterCallback" func="yes">
+            <Overload retVal="">
+                <Param name="&quot;FunctionName&quot;"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="&quot;FunctionName&quot;"/>
+                <Param name="Options = &quot;&quot;"/>
+                <Param name="ParamCount = FormalCount"/>
+                <Param name="EventInfo = Address"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="RegRead"/>
+        <KeyWord name="RegWrite"/>
+        <KeyWord name="Relative"/>
+        <KeyWord name="Reload"/>
+        <KeyWord name="Rename"/>
+        <KeyWord name="Repeat"/>
+        <KeyWord name="Report"/>
+        <KeyWord name="Resize"/>
+        <KeyWord name="Restore"/>
+        <KeyWord name="Retry"/>
+        <KeyWord name="Return"/>
+        <KeyWord name="RGB"/>
+        <KeyWord name="Right"/>
+        <KeyWord name="RightClick"/>
+        <KeyWord name="RightClickDrag"/>
+        <KeyWord name="Round" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="Number"/>
+                <Param name="N"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="RShift"/>
+        <KeyWord name="RTrim"/>
+        <KeyWord name="Run"/>
+        <KeyWord name="RunAs"/>
+        <KeyWord name="RunWait"/>
+        <KeyWord name="RWin"/>
+        <KeyWord name="RWinDown"/>
+        <KeyWord name="RWinUp"/>
+        <KeyWord name="SB_SetIcon"/>
+        <KeyWord name="SB_SetParts"/>
+        <KeyWord name="SB_SetText"/>
+        <KeyWord name="Screen"/>
+        <KeyWord name="ScrollLock"/>
+        <KeyWord name="Seconds"/>
+        <KeyWord name="Section"/>
+        <KeyWord name="Send"/>
+        <KeyWord name="SendEvent"/>
+        <KeyWord name="SendInput"/>
+        <KeyWord name="SendLevel"/>
+        <KeyWord name="SendMessage"/>
+        <KeyWord name="SendMode"/>
+        <KeyWord name="SendPlay"/>
+        <KeyWord name="SendRaw"/>
+        <KeyWord name="Serial"/>
+        <KeyWord name="SetBatchLines"/>
+        <KeyWord name="SetCapslockState"/>
+        <KeyWord name="SetControlDelay"/>
+        <KeyWord name="SetDefaultMouseSpeed"/>
+        <KeyWord name="SetEnv"/>
+        <KeyWord name="SetFormat"/>
+        <KeyWord name="SetKeyDelay"/>
+        <KeyWord name="SetLabel"/>
+        <KeyWord name="SetMouseDelay"/>
+        <KeyWord name="SetNumlockState"/>
+        <KeyWord name="SetScrollLockState"/>
+        <KeyWord name="SetStoreCapslockMode"/>
+        <KeyWord name="SetTimer"/>
+        <KeyWord name="SetTitleMatchMode"/>
+        <KeyWord name="SetWinDelay"/>
+        <KeyWord name="SetWorkingDir"/>
+        <KeyWord name="Shift"/>
+        <KeyWord name="ShiftAltTab"/>
+        <KeyWord name="ShiftDown"/>
+        <KeyWord name="shiftup"/>
+        <KeyWord name="Show"/>
+        <KeyWord name="Shutdown"/>
+        <KeyWord name="Sin" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Single"/>
+        <KeyWord name="Sleep"/>
+        <KeyWord name="Slider"/>
+        <KeyWord name="Sort"/>
+        <KeyWord name="SortDesc"/>
+        <KeyWord name="SoundBeep"/>
+        <KeyWord name="SoundGet"/>
+        <KeyWord name="SoundGetWaveVolume"/>
+        <KeyWord name="SoundPlay"/>
+        <KeyWord name="SoundSet"/>
+        <KeyWord name="SoundSetWaveVolume"/>
+        <KeyWord name="Space"/>
+        <KeyWord name="SplashImage"/>
+        <KeyWord name="SplashTextOff"/>
+        <KeyWord name="SplashTextOn"/>
+        <KeyWord name="SplitPath"/>
+        <KeyWord name="Sqrt" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Standard"/>
+        <KeyWord name="Static"/>
+        <KeyWord name="Status"/>
+        <KeyWord name="StatusBar"/>
+        <KeyWord name="StatusBarGetText"/>
+        <KeyWord name="StatusBarWait"/>
+        <KeyWord name="StatusCD"/>
+        <KeyWord name="StrGet"/>
+        <KeyWord name="Strike"/>
+        <KeyWord name="StringCaseSense"/>
+        <KeyWord name="StringGetPos"/>
+        <KeyWord name="StringLeft"/>
+        <KeyWord name="StringLen"/>
+        <KeyWord name="StringLower"/>
+        <KeyWord name="StringMid"/>
+        <KeyWord name="StringReplace"/>
+        <KeyWord name="StringRight"/>
+        <KeyWord name="StringSplit"/>
+        <KeyWord name="StringTrimLeft"/>
+        <KeyWord name="StringTrimRight"/>
+        <KeyWord name="StringUpper"/>
+        <KeyWord name="StrLen" func="yes">
+            <Overload retVal="">
+                <Param name="String"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="StrPut"/>
+        <KeyWord name="Style"/>
+        <KeyWord name="Submit"/>
+        <KeyWord name="SubStr" func="yes">
+            <Overload retVal="">
+                <Param name="String"/>
+                <Param name="StartingPos"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="String"/>
+                <Param name="StartingPos"/>
+                <Param name="Length"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Suspend"/>
+        <KeyWord name="SysGet"/>
+        <KeyWord name="SysMenu"/>
+        <KeyWord name="Tab"/>
+        <KeyWord name="Tab2"/>
+        <KeyWord name="Tabstop"/>
+        <KeyWord name="Tan" func="yes">
+            <Overload retVal="">
+                <Param name="Number"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Text"/>
+        <KeyWord name="Theme"/>
+        <KeyWord name="This"/>
+        <KeyWord name="Thread"/>
+        <KeyWord name="Tile"/>
+        <KeyWord name="Time"/>
+        <KeyWord name="Tip"/>
+        <KeyWord name="ToCodePage"/>
+        <KeyWord name="ToggleCheck"/>
+        <KeyWord name="ToggleEnable"/>
+        <KeyWord name="ToolTip"/>
+        <KeyWord name="ToolWindow"/>
+        <KeyWord name="Top"/>
+        <KeyWord name="Topmost"/>
+        <KeyWord name="TransColor"/>
+        <KeyWord name="Transform"/>
+        <KeyWord name="Transparent"/>
+        <KeyWord name="Tray"/>
+        <KeyWord name="TrayTip"/>
+        <KeyWord name="Treeview"/>
+        <KeyWord name="Trim"/>
+        <KeyWord name="True"/>
+        <KeyWord name="TV_Add"/>
+        <KeyWord name="TV_Delete"/>
+        <KeyWord name="TV_Get"/>
+        <KeyWord name="TV_GetChild"/>
+        <KeyWord name="TV_GetCount"/>
+        <KeyWord name="TV_GetNext"/>
+        <KeyWord name="TV_GetParent"/>
+        <KeyWord name="TV_GetPrev"/>
+        <KeyWord name="TV_GetSelection"/>
+        <KeyWord name="TV_GetText"/>
+        <KeyWord name="TV_Modify"/>
+        <KeyWord name="TV_Setimagelist"/>
+        <KeyWord name="Type"/>
+        <KeyWord name="Uncheck"/>
+        <KeyWord name="Underline"/>
+        <KeyWord name="Unicode"/>
+        <KeyWord name="Unlock"/>
+        <KeyWord name="Up"/>
+        <KeyWord name="UpDown"/>
+        <KeyWord name="Upper"/>
+        <KeyWord name="Uppercase"/>
+        <KeyWord name="UrlDownloadToFile"/>
+        <KeyWord name="UseErrorLevel"/>
+        <KeyWord name="VarSetCapacity" func="yes">
+            <Overload retVal="">
+                <Param name="UnquotedVarName"/>
+            </Overload>
+            <Overload retVal="">
+                <Param name="UnquotedVarName"/>
+                <Param name="RequestedCapacity"/>
+                <Param name="FillByte"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="Vis"/>
+        <KeyWord name="VisFirst"/>
+        <KeyWord name="Visible"/>
+        <KeyWord name="Volume_Down"/>
+        <KeyWord name="Volume_Mute"/>
+        <KeyWord name="volume_Up"/>
+        <KeyWord name="VScroll"/>
+        <KeyWord name="WaitClose"/>
+        <KeyWord name="WantCtrlA"/>
+        <KeyWord name="WantF2"/>
+        <KeyWord name="WantReturn"/>
+        <KeyWord name="WantTab"/>
+        <KeyWord name="WheelDown"/>
+        <KeyWord name="WheelLeft"/>
+        <KeyWord name="WheelRight"/>
+        <KeyWord name="WheelUp"/>
+        <KeyWord name="While"/>
+        <KeyWord name="WinActivate"/>
+        <KeyWord name="WinActivateBottom"/>
+        <KeyWord name="WinActive" func="yes">
+            <Overload retVal="">
+                <Param name="WinTitle"/>
+                <Param name="WinText"/>
+                <Param name="ExcludeTitle"/>
+                <Param name="ExcludeText"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="WinClose"/>
+        <KeyWord name="WinExist" func="yes">
+            <Overload retVal="">
+                <Param name="WinTitle"/>
+                <Param name="WinText"/>
+                <Param name="ExcludeTitle"/>
+                <Param name="ExcludeText"/>
+            </Overload>
+        </KeyWord>
+        <KeyWord name="WinGet"/>
+        <KeyWord name="WinGetActiveStats"/>
+        <KeyWord name="WinGetActiveTitle"/>
+        <KeyWord name="WinGetClass"/>
+        <KeyWord name="WinGetPos"/>
+        <KeyWord name="WinGetText"/>
+        <KeyWord name="WinGetTitle"/>
+        <KeyWord name="WinHide"/>
+        <KeyWord name="WinKill"/>
+        <KeyWord name="WinMaximize"/>
+        <KeyWord name="WinMenuSelectItem"/>
+        <KeyWord name="WinMinimize"/>
+        <KeyWord name="WinMinimizeAll"/>
+        <KeyWord name="WinMinimizeAllUndo"/>
+        <KeyWord name="WinMove"/>
+        <KeyWord name="WinRestore"/>
+        <KeyWord name="WinSet"/>
+        <KeyWord name="WinSetTitle"/>
+        <KeyWord name="WinShow"/>
+        <KeyWord name="WinWait"/>
+        <KeyWord name="WinWaitActive"/>
+        <KeyWord name="WinWaitClose"/>
+        <KeyWord name="WinWaitNotActive"/>
+        <KeyWord name="Wrap"/>
+        <KeyWord name="XButton1"/>
+        <KeyWord name="XButton2"/>
+        <KeyWord name="XDigit"/>
+        <KeyWord name="xm"/>
+        <KeyWord name="xp"/>
+        <KeyWord name="xs"/>
+        <KeyWord name="Yes"/>
+        <KeyWord name="ym"/>
+        <KeyWord name="yp"/>
+        <KeyWord name="ys"/>
+        <KeyWord name="{!}"/>
+    </AutoComplete>
 </NotepadPlus>
