@@ -31,7 +31,7 @@
             <Keywords name="Keywords8" id="23">% </Keywords>
             <Keywords name="Delimiters" id="24">00&quot; 01 02&quot; 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
         </KeywordLists>
-        <Styles>
+        <Styles> <!-- For notepad++ Zenburn style. TODO: colors for the default style. -->
             <WordsStyle name="DEFAULT" styleID="0" fgColor="EDEDE4" bgColor="3F3F3F" fontName="" fontStyle="0" nesting="0" />
             <WordsStyle name="COMMENTS" styleID="1" fgColor="7F9F7F" bgColor="3F3F3F" fontName="" fontStyle="0" nesting="0" />
             <WordsStyle name="LINE COMMENTS" styleID="2" fgColor="7F9F7F" bgColor="3F3F3F" fontName="" fontStyle="0" nesting="0" />
